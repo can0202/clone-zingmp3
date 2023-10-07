@@ -1,0 +1,154 @@
+.d-flex {
+  display: flex;
+}
+.item-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.p-48 {
+  padding: 48px;
+}
+.pt-48 {
+  padding-top: 48px;
+}
+.pb-48 {
+  padding-bottom: 48px;
+}
+.p-20 {
+  padding: 20px;
+}
+.pb-20 {
+  padding-bottom: 20px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.m-48 {
+  margin: 48px;
+}
+.mt-48 {
+  margin-top: 48px;
+}
+.mb-48 {
+  margin-bottom: 48px;
+}
+.p-48 {
+  padding: 48px;
+}
+.pt-48 {
+  padding-top: 48px;
+}
+.pb-48 {
+  padding-bottom: 48px;
+}
+.m-20 {
+  margin: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mt-20 {
+  margin: 20px;
+}
+.title-main {
+  font-size: 20px;
+  color: $color-black;
+  font-weight: 700;
+  a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+  }
+}
+
+a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.limit-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  &-1 {
+    -webkit-line-clamp: 1;
+  }
+  &-2 {
+    -webkit-line-clamp: 2;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.border-radius-6 {
+  border-radius: 6px;
+}
+
+.ant-slider {
+  &-track {
+    background-color: $color-main !important;
+  }
+  &-handle {
+    &::after {
+      box-shadow: 0 0 0 2px $color-main !important;
+    }
+  }
+}
+
+.ant-tooltip {
+  font-size: 11px;
+}
+
+.btn-icon {
+  background-color: transparent;
+  border: none;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+  border-radius: 50%;
+
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(221 221 221 / 52%);
+  }
+}
+
+.ant-tabs {
+  &-nav {
+    &::before {
+      display: none;
+    }
+  }
+  &-tab {
+    &.ant-tabs-tab-active {
+      .ant-tabs-tab-btn {
+        // color: $color-main !important;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 2%, 42%, 0.451);
+  border-radius: 16px;
+}
+::-webkit-scrollbar-track {
+  border-radius: 16px;
+  background: hsla(0, 0%, 87%, 0.29);
+}

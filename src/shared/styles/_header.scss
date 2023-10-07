@@ -1,0 +1,53 @@
+.header {
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  background: hsla(0, 0%, 100%, 0.8);
+  backdrop-filter: blur(50px);
+  width: calc(100% + 2px);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08);
+  padding: 12px 50px;
+  &-history {
+    flex: none;
+    gap: 10px;
+    .icon {
+      height: 40px;
+      width: 40px;
+      background-color: #dddddd45;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &-search {
+    .ant-input-wrapper {
+      height: 40px;
+      border: none;
+      outline: none;
+      background: rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      border-radius: 19px;
+      .ant-input-affix-wrapper {
+        border: none;
+        background: transparent;
+        outline: none;
+        box-shadow: none;
+        &:focus {
+          outline: none;
+        }
+        input {
+          border: none;
+          background: transparent;
+          outline: none;
+        }
+      }
+
+      .ant-input-group-addon {
+        display: none;
+      }
+    }
+  }
+}

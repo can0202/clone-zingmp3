@@ -1,0 +1,102 @@
+.footer {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: $color-white;
+  .play-controls {
+    height: 100px;
+    min-width: 768px;
+    padding: 10px 20px;
+    background-color: $color-white;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    svg {
+      font-size: 18px;
+    }
+    &-left,
+    &-right {
+      width: 30%;
+      flex: none;
+    }
+    &-bar {
+      width: auto;
+      flex: auto;
+      .controls {
+        gap: 25px;
+        .btn-play {
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid;
+          border-radius: 50%;
+          transition: 0.3s ease;
+
+          &:hover {
+            border-color: $color-main;
+            path {
+              fill: $color-main;
+            }
+          }
+        }
+        svg {
+          cursor: pointer;
+        }
+      }
+      .progress {
+        position: relative;
+        .time {
+          color: rgba(0, 0, 0, 0.25);
+          font-size: 14px;
+          line-height: 1;
+        }
+        .ant-slider {
+          margin: 10px 0 6px 0;
+        }
+      }
+      svg {
+        font-size: 20px;
+        transition: 0.3s ease;
+
+        &:hover {
+          path {
+            fill: $color-main;
+          }
+        }
+      }
+    }
+    &-left {
+      &__song {
+        gap: 10px;
+      }
+      &__control {
+        margin-left: 25px;
+        gap: 10px;
+      }
+    }
+    &-right {
+      justify-content: flex-end;
+      gap: 10px;
+
+      .player-volume {
+        &-slide {
+          width: 70px;
+          cursor: pointer;
+        }
+      }
+      .list-music {
+        button.active {
+          background-color: $color-main;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

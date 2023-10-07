@@ -1,0 +1,53 @@
+@import "../../../shared/styles/variables";
+.content-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+
+  .item {
+    img {
+      width: 100%;
+      border-radius: 4px;
+      display: block;
+    }
+    a {
+      position: relative;
+    }
+    .icon-control {
+      gap: 20px;
+      transition: 0.3s ease;
+      opacity: 0;
+      .action-play {
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+        border: 1px solid $color-white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        background-color: transparent;
+        color: $color-white;
+      }
+      .btn-icon {
+        font-size: 22px;
+        color: $color-white;
+      }
+    }
+    p {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+    &:hover {
+      .opacity {
+        opacity: 1;
+      }
+      .icon-control {
+        opacity: 1;
+      }
+    }
+  }
+}
